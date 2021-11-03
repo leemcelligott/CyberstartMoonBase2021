@@ -1,0 +1,13 @@
+#Here's what we know: when the phone was first started the pin code code to log 
+#in was 4096. Every time we enter the pin code, the number of times the pin code 
+#has been entered correctly in the past is added to the value of the pin code, to get 
+#the new pin. We know the system has been used 5520 times before. What will the pin code be this time?
+
+#Tip: Get the right pin code to get the flag. All we know at the moment is that it's definitely eight digits long.
+
+code = 4096
+x=0
+while x <= 5520:
+    code = code + x
+    x += 1
+    print(code)
