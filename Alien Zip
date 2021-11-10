@@ -8,7 +8,7 @@ for x in range(1, 1000):
   y = x.zfill(3)
   print('trying ' + str(y))
   try:
-      zf.extractall("/tmp", pwd = bytes(x, 'utf-8'))
+      zf.extractall("/tmp", pwd = bytes(y, 'utf-8'))
       print('Password found: ' + y)
       break
   except:
